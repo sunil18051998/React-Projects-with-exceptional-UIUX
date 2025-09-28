@@ -1,0 +1,73 @@
+.traffic-stats {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+}
+
+.traffic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.traffic-header h3 {
+  color: #1e293b;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.traffic-period {
+  color: #64748b;
+  font-size: 0.75rem;
+  background: #f1f5f9;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+}
+
+.traffic-category {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.gender-stats,
+.age-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gender-item,
+.age-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.gender-item span,
+.age-item span {
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-width: 50px;
+}
+
+.stat-bar {
+  flex: 1;
+  height: 8px;
+  background: #f1f5f9;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5 0%, #6366f1 100%);
+  border-radius: 1rem;
+  transition: width 0.5s ease;
+}

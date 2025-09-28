@@ -1,0 +1,38 @@
+.top-products{
+    background-color: white;
+    width: 25%;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.top-product-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    background-color: #dce1e8;
+    border-radius: 10px;
+}
+
+.product-image-container{
+  
+}
+.productinfo{
+  margin-left: 15px;
+}
+.product-details{
+  margin: 10px;
+}
+.product-name span{
+  font-size: 14px;
+}
+.product-sold span{
+  font-size: 14px;
+}
+.product-price span{
+  font-size: 14px;
+}
+.product-price {
+  margin-left: 20px;
+}
