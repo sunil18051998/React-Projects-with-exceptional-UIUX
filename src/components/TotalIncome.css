@@ -1,0 +1,11 @@
+.total-income-container{
+    background-color: white;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+}
+.total-income-container h2{
+    font-size: 26px;
+    margin-bottom: 10px;
+}

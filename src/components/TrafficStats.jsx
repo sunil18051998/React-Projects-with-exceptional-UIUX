@@ -1,50 +1,52 @@
-// components/TrafficStats.jsx
-import React from 'react';
-import './TrafficStats.css';
+import React from "react";
+import "./TrafficStats.css";
 
 const TrafficStats = () => {
+  const trafficData = [
+    { category: "Female", value: 65, color: "#3b82f6" }, // Blue
+    { category: "Male", value: 58, color: "#ef4444" }, // Red
+    { category: "45+", value: 42, color: "#3b82f6" }, // Blue
+    { category: "30+", value: 78, color: "#3b82f6" }, // Blue
+    { category: "20+", value: 85, color: "#3b82f6" }, // Blue
+    { category: "15+", value: 35, color: "#3b82f6" }, // Blue
+    { category: "10+", value: 25, color: "#3b82f6" }, // Blue
+  ];
+
   return (
-    <div className="traffic-stats">
-      <div className="traffic-header">
-        <h3>Traffic</h3>
-        <span className="traffic-period">All time</span>
-      </div>
-      
-      <div className="traffic-category">
-        <div className="gender-stats">
-          <div className="gender-item">
-            <span>Female</span>
-            <div className="stat-bar">
-              <div className="bar-fill" style={{ width: '60%' }}></div>
-            </div>
-          </div>
-          <div className="gender-item">
-            <span>Male</span>
-            <div className="stat-bar">
-              <div className="bar-fill" style={{ width: '40%' }}></div>
-            </div>
-          </div>
+    <div className="traffic-div-container">
+      <div className="traffic-stats-card">
+        <div className="traffic-header">
+          <h2 className="traffic-title">Traffic</h2>
         </div>
-        
-        <div className="age-stats">
-          <div className="age-item">
-            <span>45+</span>
-            <div className="stat-bar">
-              <div className="bar-fill" style={{ width: '30%' }}></div>
-            </div>
-          </div>
-          <div className="age-item">
-            <span>30+</span>
-            <div className="stat-bar">
-              <div className="bar-fill" style={{ width: '20%' }}></div>
-            </div>
-          </div>
-          <div className="age-item">
-            <span>20+</span>
-            <div className="stat-bar">
-              <div className="bar-fill" style={{ width: '15%' }}></div>
-            </div>
-          </div>
+
+        <div className="traffic-content">
+          {trafficData.map((item, index) => (
+            <TrafficBar
+              key={index}
+              category={item.category}
+              value={item.value}
+              color={item.color}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const TrafficBar = ({ category, value, color }) => {
+  return (
+    <div className="traffic-bar-container">
+      <div className="traffic-category">{category}</div>
+      <div className="traffic-bar-wrapper">
+        <div
+          className="traffic-bar"
+          style={{
+            width: `${value}%`,
+            backgroundColor: color,
+          }}
+        >
+          <span className="traffic-value">{value}%</span>
         </div>
       </div>
     </div>

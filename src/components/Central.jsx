@@ -1,15 +1,24 @@
-import React from 'react'
-import LineChart from './LineChart'
-import DonutChartCard from './DonutChartCard'
+import React from "react";
+import LineChart from "./LineChart";
+import DonutChartCard from "./DonutChartCard";
+import RecentOrders from "./RecentOrders";
+import "./Central.css";
+import TotalIncome from "./TotalIncome";
 
 const Central = () => {
   return (
-    <div className='bg-white rounded-lg' style={{width: "80%", height: "100vh", margin: '10px', padding: '20px'}}>
-        <p>Hello</p>
-        <DonutChartCard />
-      
-    </div>
-  )
-}
+    <>
+      <div className="central-container">
+        <LineChart />
+        <div className="midrow-container">
+          <DonutChartCard />
+          <TotalIncome />
+        </div>
 
-export default Central
+        <RecentOrders />
+      </div>
+    </>
+  );
+};
+
+export default Central;

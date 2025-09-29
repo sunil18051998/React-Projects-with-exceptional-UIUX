@@ -15,7 +15,22 @@ const DonutChartCard = () => {
     <div className="donut-chart-card">
       <div className="sales-card-header">
         <h3 className="sales-card-title">Product sold</h3>
-        <div className="total-sales-badge">Total: {totalSales.toLocaleString()}</div>
+        {/* <div className="total-sales-badge">Total: {totalSales.toLocaleString()}</div> */}
+
+        <div className="products-legend">
+        {products.map((product, index) => {
+          const percentage = (product.sales / totalSales) * 100;
+          return (
+            <div key={index} className="legend-item">
+              <div className="legend-info">
+                <div className="legend-color" style={{ backgroundColor: product.color }}></div>
+                <span className="legend-name">{product.name}</span>
+              </div>
+              
+            </div>
+          );
+        })}
+      </div>
       </div>
       
       <div className="chart-container">
@@ -27,23 +42,7 @@ const DonutChartCard = () => {
         </div>
       </div>
       
-      <div className="products-legend">
-        {products.map((product, index) => {
-          const percentage = (product.sales / totalSales) * 100;
-          return (
-            <div key={index} className="legend-item">
-              <div className="legend-info">
-                <div className="legend-color" style={{ backgroundColor: product.color }}></div>
-                <span className="legend-name">{product.name}</span>
-              </div>
-              <div className="legend-numbers">
-                <span className="legend-sales">{product.sales.toLocaleString()}</span>
-                <span className="legend-percentage">{percentage.toFixed(1)}%</span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
+      
     </div>
   );
 };
@@ -53,7 +52,7 @@ const DonutChart = ({ products, totalSales }) => {
   let currentOffset = 0;
 
   return (
-    <svg className="donut-chart" width="200" height="200" viewBox="0 0 120 120">
+    <svg className="donut-chart" width="150" height="150" viewBox="0 0 120 120">
       {products.map((product, index) => {
         const percentage = (product.sales / totalSales) * 100;
         const segmentLength = ((percentage / 100) * circumference)-12;

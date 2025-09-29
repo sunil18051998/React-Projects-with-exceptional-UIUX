@@ -1,5 +1,6 @@
 import React from "react";
 import { FiHome, FiUsers, FiSettings, FiLogOut, FiShoppingCart, FiShoppingBag } from "react-icons/fi";
+import "./LeftSidebar.css";
 
 function Icon({ iconName }) {
   switch (iconName) {
@@ -23,8 +24,8 @@ function IndividualLink({ text, activeState }) {
   let hovercls = "hover:bg-[#d5e5e8]";
   if (activeState) {
     return (
-      <div className={`dflx mr20 pd10 aic rounded-sm ${activecls} cursor-pointer flex`}>
-        <div className="dflx mr20 jcc aic">
+      <div className={`dflx aic pd10  rounded-sm ${activecls} cursor-pointer flex`}>
+        <div className="dflx  jcc ">
           <Icon iconName={text.toLowerCase()} />
         </div>
 
@@ -35,8 +36,8 @@ function IndividualLink({ text, activeState }) {
     );
   } else {
     return (
-      <div className={`dflx mr20 pd10 aic rounded-sm ${hovercls} cursor-pointer flex`}>
-        <div className="dflx mr20 jcc aic">
+      <div className={`dflx aic pd10  rounded-sm ${hovercls} cursor-pointer flex`}>
+        <div className="dflx  jcc ">
           <Icon iconName={text.toLowerCase()} />
           
         </div>
@@ -50,7 +51,7 @@ function IndividualLink({ text, activeState }) {
 export default function LeftSidebar() {
   return (
     <>
-      <div style={{ backgroundColor: "white", width: "20%", height: "100vh", margin: '10px' }} className="p-4 rounded-lg">
+      <div className="p-4 rounded-lg leftsidebar-container">
         <IndividualLink text="Home" />
         <IndividualLink text="Customers" activeState={true} />
         <IndividualLink text="Orders" />

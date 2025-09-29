@@ -1,0 +1,7 @@
+.leftsidebar-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 8% 8% 8% 8% 8% 8% auto;
+    grid-gap: 10px;
+    background-color: white;
+}

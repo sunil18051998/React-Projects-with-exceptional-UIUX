@@ -37,35 +37,33 @@ const TopProducts = () => {
   return (
     <div className="top-products">
       <h3>Top products</h3>
-      {products.map((product, index) => (
-        <div key={index} className="top-product-item">
-          <div className="product-details dflx" >
-
-              <div className="product-image-container dflx aic">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="product-image"
-                  width={50}
-                  height={50}
-                />
+      <div className="top-products-list-container">
+        {products.map((product, index) => (
+          <div key={index} className="top-product-item-container">
+            <div className="product-image-container dflx aic">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="product-image"
+                width={50}
+                height={50}
+              />
+            </div>
+            <div className="productinfo">
+              <div className="product-name">
+                <span>{product.name}</span>
               </div>
-              <div className="productinfo">
-                <div className="product-name">
-                  <span>{product.name}</span>
-                </div>
-                <div className="product-sold">
-                  <span>{product.sold}</span>
-                </div>
+              <div className="product-sold">
+                <span>{product.sold}</span>
               </div>
-
-
-            <div className="product-price">
+            </div>
+            <div className="product-price dflx aic">
               <span>{product.price}</span>
             </div>
+
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
