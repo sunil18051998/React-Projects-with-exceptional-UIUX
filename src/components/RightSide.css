@@ -3,3 +3,6 @@
     grid-template-columns: auto;
     grid-gap: 10px;
 }
+ .ordername{
+    margin-left: 10px;
+}

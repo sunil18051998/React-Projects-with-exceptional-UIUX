@@ -1,8 +1,9 @@
 .order-item-container{
     display: grid;
-    grid-template-columns: 10% 30% 15% 15% 15% 15%;
+    grid-template-columns: 5% 25% 20% 15% 15% 15%;
     grid-gap: 10px;
     border-top: 2px solid #d1d5db;
+    padding: 10px;
 }
 .order-list-container{
     display: grid;
@@ -32,4 +33,13 @@
 .head{
     justify-content: space-between;
     margin-bottom: 20px;
+}
+.shipstatus{
+    border-radius: 20px;
+    border-width: 2px;
+    justify-content: space-evenly;
+}
+.order-header p{
+    color: #9b9696;
+    font-weight: 500;
 }

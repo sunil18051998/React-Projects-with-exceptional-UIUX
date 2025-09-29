@@ -1,5 +1,12 @@
 import React from "react";
-import { FiHome, FiUsers, FiSettings, FiLogOut, FiShoppingCart, FiShoppingBag } from "react-icons/fi";
+import {
+  FiHome,
+  FiUsers,
+  FiSettings,
+  FiLogOut,
+  FiShoppingCart,
+  FiShoppingBag,
+} from "react-icons/fi";
 import "./LeftSidebar.css";
 
 function Icon({ iconName }) {
@@ -19,30 +26,46 @@ function Icon({ iconName }) {
   }
 }
 
-function IndividualLink({ text, activeState }) {
+function IndividualLink({ text, activeState, ordercount }) {
   let activecls = "bg-[#b2e2eb]";
   let hovercls = "hover:bg-[#d5e5e8]";
+  let logoutcls = (text == "Logout") ? "logoutcls" : '';
   if (activeState) {
     return (
-      <div className={`dflx aic pd10  rounded-sm ${activecls} cursor-pointer flex`}>
-        <div className="dflx  jcc ">
-          <Icon iconName={text.toLowerCase()} />
+      <div
+        className={`dflx aic pd10  rounded-lg ${activecls} cursor-pointer flex`}
+      >
+        <div className="dflx aic ">
+          <div className="dflx  jcc ">
+            <Icon iconName={text.toLowerCase()} />
+          </div>
+          <p className="fs13 mleft">{text}</p>
         </div>
 
-        <p className="fs13">
-          {text}
-        </p>
+        {ordercount > 0 && text == "Orders" && (
+          <div className="order-count dflx aic jcc">
+            <p>{ordercount}</p>
+          </div>
+        )}
       </div>
     );
   } else {
     return (
-      <div className={`dflx aic pd10  rounded-sm ${hovercls} cursor-pointer flex`}>
-        <div className="dflx  jcc ">
-          <Icon iconName={text.toLowerCase()} />
-          
+      <div
+        className={`dflx aic pd10  rounded-lg ${hovercls} cursor-pointer flex alignend ${logoutcls}`}
+      >
+        <div className="dflx aic ">
+          <div className="dflx  jcc ">
+            <Icon iconName={text.toLowerCase()} />
+          </div>
+          <p className="fs13 mleft">{text}</p>
         </div>
-        <p className="fs13">{text}</p>
-        
+
+        {ordercount > 0 && text == "Orders" && (
+          <div className="order-count dflx aic jcc">
+            <p>{ordercount}</p>
+          </div>
+        )}
       </div>
     );
   }
@@ -54,7 +77,7 @@ export default function LeftSidebar() {
       <div className="p-4 rounded-lg leftsidebar-container">
         <IndividualLink text="Home" />
         <IndividualLink text="Customers" activeState={true} />
-        <IndividualLink text="Orders" />
+        <IndividualLink text="Orders" activeState={false} ordercount="12" />
         {/* <IndividualLink text="Anaalytics" /> */}
         <IndividualLink text="Products" />
         {/* <IndividualLink text="Store" /> */}
