@@ -1,5 +1,5 @@
 import Central from "./Central";
-import "./Middle.css";
+import "../styles/Middle.css";
 import TopBar from "./TopBar";
 import RightSide from "./RightSide";
 

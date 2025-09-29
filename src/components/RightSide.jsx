@@ -1,7 +1,7 @@
 import React from "react";
 import TopProducts from "./TopProducts";
 import TrafficStats from "./TrafficStats";
-import "./RightSide.css";
+import "../styles/RightSide.css";
 
 export default function RightSide() {
   return (

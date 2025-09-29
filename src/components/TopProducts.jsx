@@ -1,6 +1,6 @@
 // components/TopProducts.jsx
 import React from "react";
-import "./TopProducts.css";
+import "../styles/TopProducts.css";
 import { FaEllipsisH } from "react-icons/fa";
 
 const TopProducts = () => {

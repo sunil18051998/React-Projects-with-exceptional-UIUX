@@ -1,5 +1,5 @@
 import React from "react";
-import "./TotalIncome.css";
+import "../styles/TotalIncome.css";
 import { GoArrowUpRight } from "react-icons/go";
 
 export default function TotalIncome() {

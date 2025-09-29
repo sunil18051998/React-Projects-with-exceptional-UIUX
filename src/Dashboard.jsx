@@ -1,6 +1,6 @@
 // Dashboard.jsx
 import React from "react";
-import "./Dashboard.css";
+import "./styles/Dashboard.css";
 import LeftSidebar from "./components/LeftSidebar";
 import Middle from "./components/Middle";
 

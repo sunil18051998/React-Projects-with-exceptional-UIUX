@@ -7,7 +7,7 @@ import {
   FiShoppingCart,
   FiShoppingBag,
 } from "react-icons/fi";
-import "./LeftSidebar.css";
+import "../styles/LeftSidebar.css";
 
 function Icon({ iconName }) {
   switch (iconName) {

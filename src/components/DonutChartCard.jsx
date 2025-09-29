@@ -1,5 +1,5 @@
 import React from 'react';
-import './DonutChartCard.css';
+import '../styles/DonutChartCard.css';
 
 const DonutChartCard = () => {
   const products = [

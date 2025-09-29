@@ -1,5 +1,5 @@
 import React from "react";
-import "./RecentOrders.css";
+import "../styles/RecentOrders.css";
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import { GoCheck, GoClock, GoX } from "react-icons/go";
 

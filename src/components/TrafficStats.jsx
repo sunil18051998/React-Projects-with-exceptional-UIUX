@@ -1,5 +1,5 @@
 import React from "react";
-import "./TrafficStats.css";
+import "../styles/TrafficStats.css";
 import { SlArrowDown } from "react-icons/sl";
 
 const TrafficStats = () => {
