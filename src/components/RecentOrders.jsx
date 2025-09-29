@@ -48,13 +48,17 @@ export default function RecentOrders() {
   return (
     <>
       <div className="recent-orders-container">
-        <div className="dflx head">
+        <div className="dflx head alignend">
           <div>
             <h3 className="recent-order-text">Recent Orders</h3>
           </div>
           <div className="filter-container">
-            <div className="dflx aic jcc"><HiAdjustmentsHorizontal /></div>
-            <div><span className="filter">Filter</span></div>
+            <div className="dflx aic jcc">
+              <HiAdjustmentsHorizontal />
+            </div>
+            <div>
+              <span className="filter">Filter</span>
+            </div>
           </div>
         </div>
 

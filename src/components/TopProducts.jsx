@@ -1,6 +1,7 @@
 // components/TopProducts.jsx
 import React from "react";
 import "./TopProducts.css";
+import { FaEllipsisH } from "react-icons/fa";
 
 const TopProducts = () => {
   const products = [
@@ -36,7 +37,11 @@ const TopProducts = () => {
 
   return (
     <div className="top-products">
-      <h3>Top products</h3>
+      <div className="dflx aic pd10 alignend">
+        <h3>Top products</h3>
+        <FaEllipsisH size={15} />
+      </div>
+      
       <div className="top-products-list-container">
         {products.map((product, index) => (
           <div key={index} className="top-product-item-container">

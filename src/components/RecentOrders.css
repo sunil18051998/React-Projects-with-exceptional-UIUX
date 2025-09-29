@@ -19,7 +19,7 @@
     font-weight: 700;
 }
 .filter-container{
-    background-color: aliceblue;
+    background-color: #dce1e8;
     border-radius: 20px;
     display: grid;
     grid-template-columns: auto auto;
@@ -30,6 +30,6 @@
     font-size: 13px;
 }
 .head{
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 20px;
 }

@@ -5,17 +5,17 @@ import "./LeftSidebar.css";
 function Icon({ iconName }) {
   switch (iconName) {
     case "home":
-      return <FiHome size={24} className="inline-block mr-2" />;
+      return <FiHome size={20} className="inline-block mr-2" />;
     case "customers":
-      return <FiUsers size={24} className="inline-block mr-2" />;
+      return <FiUsers size={20} className="inline-block mr-2" />;
     case "settings":
-      return <FiSettings size={24} className="inline-block mr-2" />;
+      return <FiSettings size={20} className="inline-block mr-2" />;
     case "logout":
-      return <FiLogOut size={24} className="inline-block mr-2" />;
+      return <FiLogOut size={20} className="inline-block mr-2" />;
     case "orders":
-      return <FiShoppingCart size={24} className="inline-block mr-2" />;
+      return <FiShoppingCart size={20} className="inline-block mr-2" />;
     case "products":
-      return <FiShoppingBag size={24} className="inline-block mr-2" />;
+      return <FiShoppingBag size={20} className="inline-block mr-2" />;
   }
 }
 
@@ -29,7 +29,7 @@ function IndividualLink({ text, activeState }) {
           <Icon iconName={text.toLowerCase()} />
         </div>
 
-        <p className="">
+        <p className="fs13">
           {text}
         </p>
       </div>
@@ -41,7 +41,7 @@ function IndividualLink({ text, activeState }) {
           <Icon iconName={text.toLowerCase()} />
           
         </div>
-        <p className="">{text}</p>
+        <p className="fs13">{text}</p>
         
       </div>
     );

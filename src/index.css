@@ -40,3 +40,6 @@ code {
 .pd20{
   padding: 20px;
 } 
+.alignend{
+  justify-content: space-between;
+}

@@ -21,7 +21,7 @@ const DonutChartCard = () => {
         {products.map((product, index) => {
           const percentage = (product.sales / totalSales) * 100;
           return (
-            <div key={index} className="legend-item">
+            <div key={index} className="legend-item" style={{ backgroundColor: `${product.color}30` }}>
               <div className="legend-info">
                 <div className="legend-color" style={{ backgroundColor: product.color }}></div>
                 <span className="legend-name">{product.name}</span>
