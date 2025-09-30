@@ -55,6 +55,26 @@ export default function RecentOrders() {
       shipping: "Declined",
       Date: "2023-10-01",
     },
+    {
+      id: 5,
+      productName: "Product C",
+      image:
+        "https://images.pexels.com/photos/8092177/pexels-photo-8092177.jpeg",
+      productNumber: "54321",
+      paymentStatus: "Paid",
+      shipping: "Delivered",
+      Date: "2023-10-01",
+    },
+    {
+      id: 6,
+      productName: "Product D",
+      image:
+        "https://images.pexels.com/photos/8092177/pexels-photo-8092177.jpeg",
+      productNumber: "09876",
+      paymentStatus: "Refunded",
+      shipping: "Declined",
+      Date: "2023-10-01",
+    },
   ];
   return (
     <>
