@@ -7,6 +7,7 @@ import {
   FiShoppingCart,
   FiShoppingBag,
 } from "react-icons/fi";
+import { FcComboChart } from "react-icons/fc";
 import "../styles/LeftSidebar.css";
 
 function Icon({ iconName }) {
@@ -75,14 +76,19 @@ export default function LeftSidebar() {
   return (
     <>
       <div className="p-4 rounded-lg leftsidebar-container">
-        <IndividualLink text="Home" activeState={true} />
+        <div className="company-info-container-leftside">
+          <div className="company-logo"><FcComboChart size={30} /></div>
+          <div className="company-name"><h2>New Company</h2></div>
+        </div>
+        <div>
+          <IndividualLink text="Home" activeState={true} />
         <IndividualLink text="Customers"  />
         <IndividualLink text="Orders" activeState={false} ordercount="12" />
-        {/* <IndividualLink text="Anaalytics" /> */}
         <IndividualLink text="Products" />
-        {/* <IndividualLink text="Store" /> */}
         <IndividualLink text="Settings" />
         <IndividualLink text="Logout" />
+        </div>
+        
       </div>
     </>
   );

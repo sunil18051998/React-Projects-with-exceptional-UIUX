@@ -1,7 +1,7 @@
 .leftsidebar-container{
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 8% 8% 8% 8% 8% 8% auto;
+    grid-template-rows: 10% 8% 8% 8% 8% 8% 8% auto;
     grid-gap: 10px;
     background-color: white;
 }
@@ -10,7 +10,7 @@
 }
 .order-count{
     color: #ffffff;
-    background-color: blue;
+    background-color: #008eff;
     border-radius: 50%;
     font-size: 10px;
     width: 25px;
@@ -21,4 +21,14 @@
 }
 .logoutcls{
     color: #ca1010;
+}
+.company-info-container-leftside{
+    display: grid;
+    grid-template-columns: 10% auto;
+    grid-gap: 10px;
+    align-items: center;
+}
+.company-name h2{
+    font-size: 18px;
+    font-weight: 500;
 }

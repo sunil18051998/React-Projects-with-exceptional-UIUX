@@ -1,0 +1,48 @@
+/* NotificationIcons.css */
+.notification-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.icon {
+  font-size: 24px;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #333;
+}
+
+.badge {
+  position: absolute;
+  top: 5px;
+  right: 3px;
+  background-color: #ff4444;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.badge-dot {
+  width: 12px;
+  height: 12px;
+}
+
+.badge-count {
+  min-width: 18px;
+  height: 18px;
+  font-size: 8px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
