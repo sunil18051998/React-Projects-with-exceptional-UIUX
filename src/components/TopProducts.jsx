@@ -38,7 +38,7 @@ const TopProducts = () => {
   return (
     <div className="top-products">
       <div className="dflx aic pd10 alignend">
-        <h3>Top products</h3>
+        <h3 className="top-products-title">Top products</h3>
         <FaEllipsisH size={15} />
       </div>
       

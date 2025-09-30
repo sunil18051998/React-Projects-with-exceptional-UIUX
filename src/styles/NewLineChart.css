@@ -1,0 +1,29 @@
+.linechart-container{
+    background-color: white;
+    border-radius: 10px;
+}
+.revenue-gain-top{
+    padding: 0px 30px;
+}
+.arrowbox-top{
+    color: rgb(77, 222, 48);
+    border: 2px solid rgb(77, 222, 48);
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+}
+.total-revenue-container{
+        background-color: white;
+    width: auto;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+}
+.revenue-gain h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.revenue-gain h2{
+    font-size: 28px;
+    font-weight: 500;
+}

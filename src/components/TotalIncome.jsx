@@ -7,7 +7,7 @@ export default function TotalIncome() {
     <>
       <div className="total-income-container">
         <div className="dflx aic alignend">
-          <h3>Total Income</h3>
+          <h3 className="total-income-title">Total Income</h3>
           <div className="arrowbox dflx aic jcc">
             <GoArrowUpRight size={20} />
           </div>

@@ -33,4 +33,10 @@
 .product-price span{
   font-size: 14px;
 }
+.top-products-title{
+    font-size: 19px;
+    font-weight: 500;
+    color: #1f2937;
+    margin: 0;
+}
 

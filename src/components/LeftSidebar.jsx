@@ -75,8 +75,8 @@ export default function LeftSidebar() {
   return (
     <>
       <div className="p-4 rounded-lg leftsidebar-container">
-        <IndividualLink text="Home" />
-        <IndividualLink text="Customers" activeState={true} />
+        <IndividualLink text="Home" activeState={true} />
+        <IndividualLink text="Customers"  />
         <IndividualLink text="Orders" activeState={false} ordercount="12" />
         {/* <IndividualLink text="Anaalytics" /> */}
         <IndividualLink text="Products" />

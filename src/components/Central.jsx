@@ -1,15 +1,16 @@
 import React from "react";
-import LineChart from "./LineChart";
 import DonutChartCard from "./DonutChartCard";
 import RecentOrders from "./RecentOrders";
 import "../styles/Central.css";
 import TotalIncome from "./TotalIncome";
+import NewLineChart from "./NewLineChart";
 
 const Central = () => {
   return (
     <>
       <div className="central-container">
-        <LineChart />
+        {/* <LineChart /> */}
+        <NewLineChart />
         <div className="midrow-container">
           <DonutChartCard />
           <TotalIncome />

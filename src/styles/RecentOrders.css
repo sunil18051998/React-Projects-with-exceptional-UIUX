@@ -24,11 +24,12 @@
     border-radius: 20px;
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 10px;
+
     padding: 0px 8px;
 }
 .filter{
     font-size: 13px;
+    padding: 2px 7px;
 }
 .head{
     justify-content: space-between;
